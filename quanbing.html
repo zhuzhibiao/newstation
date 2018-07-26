@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 绑定菜单演示_dowebok</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
+	<li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
+	<li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
+	<li data-menuanchor="page4"><a href="#page4">第四屏</a></li>
+	<li data-menuanchor="page4"><a href="index.html">首页</a></li>
+</ul>
+
+<div id="dowebok">
+	<div class="section">
+		<h3>3D打印服务</h3>
+		<p>3D打印现在是一个非常火热的概念，大家都听说过3D打印的概念，但可能很多人却不了解一个3D打印物品是如何从零开始，被打印出来的。现在详细了解3D打印的详细工作流程。（１）３Ｄ 模型生成。（２）数据格式转换。（３）切片计算。（４）打印路径规划．；（５）３Ｄ打印。
+</p>
+	</div>
+	<div class="section">
+		<h3>展览设计</h3>
+		<p>展览展示是一门综合的设计艺术，是一种实用的、以视觉艺术为主的空间设计。是一种对观众的心理、思想和行为产生影响的创造性设计活动。通过在会议、展览会、博览会活动中，利用空间环境，采用建造、工程、视觉传达手段，借助展具设施，将要传播的信息和内容呈现在公众面前。</p>
+	</div>
+	<div class="section">
+		<h3>什么是三维设计？</h3>
+		<p>三维设计出来的模型，给人看起来直观、方便，即就是外行也能看得懂。
+
+给人以更强烈的视觉刺激，震撼程度远远高于二维画面。有了物体的三维数据，可以产生任意视图，视图间能保持 正确的投影关系，这为生产工程图带来了方便。此外还能生成透视图和轴侧图，这在二维系统中是做不到的 ；构造模型的数据结构简单，节约计算机资源；是人工绘图的自然延伸。</p>
+	</div>
+	<div class="section">
+		<h3>逆向工程</h3>
+		<p>逆向工程被广泛地应用到新产品开发和产品改型设计、产品仿制、质量分析检测等领域，aau经过多年的成功服务经验，我们得出几大优势如下：
+
+1、缩短产品的设计、开发周期，加快产品的更新换代速度；
+
+2、降低企业开发新产品的成本与风险；
+
+3、加快产品的造型和系列化的设计；
+
+4、适合单件、小批量的零件制造</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+</html>
