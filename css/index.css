@@ -163,13 +163,39 @@ body{
 	left: -5px;
 	background: white;
 }
-.header .container1 .son:hover{
+.header .container1 .container2 li .con2{
+	display: block;
+	width: 160px;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+	position: absolute;
+	top: 150px;
+	left: -5px;
+	background: white;
+}
+.header .container1 .container2 li .con3{
+	display: block;
+	width: 160px;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+	position: absolute;
+	top: 200px;
+	left: -5px;
+	background: white;
+}
+.header .container1 li:hover{
 	background: red;
 }
 .header .container1 .container2 li:nth-child(1){
 	background: red;
 }
-/*.header .container1 .container2 li:nth-child(3):hover .con{
+.header .container1 .container2 li:nth-child(3):hover .con{
 	z-index: 10;
 }
 .header .container1 .container2 li:nth-child(3):hover .con1{
@@ -180,13 +206,47 @@ body{
 }
 .header .container1 .container2 li:nth-child(3) .con1:hover{
 	background: red;
-}*/
+}
+.header .container1 .container2 li:nth-child(1){
+	background: red;
+}
+.header .container1 .container2 li:nth-child(4):hover .con{
+	z-index: 10;
+}
+.header .container1 .container2 li:nth-child(4):hover .con1{
+	z-index: 10;
+}
+.header .container1 .container2 li:nth-child(4):hover .con2{
+	z-index: 10;
+}
+.header .container1 .container2 li:nth-child(4):hover .con3{
+	z-index: 10;
+}
+.header .container1 .container2 li:nth-child(4) .con:hover{
+	background: red;
+}
+.header .container1 .container2 li:nth-child(4) .con1:hover{
+	background: red;
+}
+.header .container1 .container2 li:nth-child(4) .con2:hover{
+	background: red;
+}
+.header .container1 .container2 li:nth-child(4) .con3:hover{
+	background: red;
+}
 .slider{
 	width: 1519px;
 	height: 411px;
 	position: relative;
 	top: 0;
 	left: 0px;
+	overflow: hidden;
+}
+.slider img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .slider .icon1{
 	width: 25px;
@@ -198,6 +258,7 @@ body{
 	background-image: url('../img/p3.png');
 	background-position: 0 0;
 	cursor: pointer;
+	z-index: 5;
 }
 .slider .icon2{
 	width: 25px;
@@ -209,6 +270,7 @@ body{
 	background-image: url('../img/p3.png');
 	background-position: -25px 0;
 	cursor: pointer;
+	z-index: 5;
 }
 .slider .swi{
 	width: 54px;
@@ -360,15 +422,31 @@ body{
 	width: 870px;
 	height: 462px;
 	padding: 0 15px;
-
+	position: relative;
+	overflow: hidden;
 }
+.cp .row .hot .box{
+	width: 4895px;
+	height: 462px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+.cp .row .hot .box img{
+	margin-right: 20px;
+}
+
 .cp .row .hot .big{
 	width: 870px;
 	height: 40px;
 	background-color:rgba(76,76,76,0.8);
 	position: relative;
-	top: -40px;
+	top: 426px;
 	right: 0;
+	z-index: 20;
+	
+	
 }
 .cp .row .hot .big .sm{
 	width: 208px;
@@ -376,6 +454,8 @@ body{
 	position: relative;
 	left: 400px;
 	bottom: -16px;
+	
+	
 
 }
 .cp .row .hot .big .son{
@@ -385,8 +465,9 @@ body{
 	margin: 0 5px;
 	background: black;
 	float: left;
+	
 }
-.cp .row .hot .big .son:nth-child(4){
+.cp .row .hot .big .son:nth-child(1){
 	background: blue;
 }
 .cp .row .hot .big .son:hover{
@@ -806,7 +887,7 @@ body{
 	height: 309px;
 	margin: 50px auto;
 	padding: 0 15px;
-
+	overflow: hidden;
 }
 .coo .titlecon{
 	width: 1170px;
@@ -842,7 +923,7 @@ body{
 	margin-top: 5px;
 }
 .coo .tsc{
-	width: 100%;
+	width: 4958px;
 	height: 140px;
 	overflow: hidden;
 }
@@ -868,7 +949,7 @@ body{
 	display: block;
 	border-radius: 3px;
 }
-.coo .tsc .son .shang:hover{
+.coo .tsc .son:hover .shang{
 	background: black;
 }
 .coo .page{
@@ -998,6 +1079,7 @@ footer .copy .link2{
 	position: fixed;
 	right: 20px;
 	top: 35%;
+	z-index: 10;
 }
 .side .son{
 	width: 50px;
@@ -1007,6 +1089,7 @@ footer .copy .link2{
 	background: #474747;
 	border-radius: 50%;
 	padding-top: 10px;
+
 }
 .side .son i{
 	font-size: 30px;
